@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+a, a:visited {
+    color: black;
+}
+
 .box {
     display: flex;
     justify-content: center;
@@ -20,6 +24,27 @@
     background-color: brown;
 }
 
+.SideBarParent {
+    display: flex;
+    background-color: brown;
+}
+
+.SideBarChild {
+    background-color: rgb(161, 232, 74);
+    width: 200px;
+}
+
+.CardParent {
+    display: flex;
+    justify-content: center;
+}
+
+.Card {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px black, solid;
+}
+
 nav {
     width: 100%;
     display: flex;
@@ -29,12 +54,163 @@ nav {
     font-size: 1.2rem;;
 }
 
+.Oppgave6_Main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Oppgave7_SpaceEvenly {
+    display: flex;
+    justify-content: space-evenly
+    
+}
+
+.Oppgave7_FlexStart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Oppgave7_FlexEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Oppgave7_Center {
+    display: flex;
+    justify-content: center;
+}
+
+.Oppgave7_SpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Oppgave7_SpaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Oppgave7_Card {
+    width: 100px;
+    height: 100px;
+    border: 1px ,solid, black;
+}
+
+.Oppgave8_FlexStart {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Oppgave8_FlexEnd {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Oppgave8_AlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+.Oppgave9_Grow {
+    display: flex;
+}
+
+.Oppgave9_Small {
+    flex-grow: 1;
+    background-color: aquamarine;
+}
+
+.Oppgave9_Medium {
+    flex-grow: 2;
+    background-color: black;
+}
+
+.Oppgave9_Large {
+    flex-grow: 3;
+    background-color: brown;
+}
+
+.Oppgave10_Main {
+    background-color: blue;
+    height: 100%;
+    display: flex;
+}
+
+.Oppgave10_Aside {
+    Width: 20%;
+    background-color:sienna
+}
+
+.Oppgave11_Main {
+    display: flex;
+    gap: 10px;
+}
+
+.Oppgave11_Card {
+    width: 100px;
+    height: 100px;
+    border: black, 2px, solid;
+}
+
+.Oppgave12_Main {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5px;
+}
+
+.Oppgave12_Card {
+    border: 2px, black, solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 0;
+    border-radius: 10px;
+    height: 250px;
+    width: 150px;
+}
+
+.Oppgave12_Card img {
+    width: 100%;
+    min-height: 20px;
+}
+
+.Oppgave12_Buy {
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    background-color: black;
+    width: 100%;
+    color: azure;
+}
+
+.Smallest {
+    width: 50px;
+    height: 80px;
+    border: 2px, red, solid;
+}
+
+.Medium {
+    width: 50px;
+    height: 120px;
+    border: 2px, rgb(74, 47, 208), solid;
+}
+
+.Largest {
+    width: 50px;
+    height: 180px;
+    border: 2px, rgb(68, 242, 68), solid;
+}
+
 ul {
   padding: 0;
   /* width: 100%; */
-
+    margin: 0;
   display: flex;
-  background-color: blue;
+  background-color: rgb(44, 156, 81);
   justify-content:space-evenly;
 }
 
@@ -42,10 +218,24 @@ li {
     list-style: none;
 }
 
+@media screen and (max-width: 600px) {
+    .CardParent {
+        flex-direction: column;
+    }
+    .Oppgave11_Main {
+        flex-wrap: wrap;
+    }
+
+    .Oppgave12_Main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 footer {
+    background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
 }
-
